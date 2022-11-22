@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+#home {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#createGmail {
+    width: 45rem;
+    height: 70vh;
+    padding: 2rem;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
+}
+
+form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+form img {
+    width: 5rem;
+}
+
+h2 {
+    font-weight: 500;
+
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+}
+
+input {
+    font-size: 0.9rem;
+    line-height: 24px;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    border: 1px solid black;
+    outline: none;
+    margin: 0.5rem 0.3rem;
+    width: 10rem;
+}
+
+input::placeholder {
+    padding-left: 0.3rem;
+}
+
+#email {
+    width: 21rem;
+}
+
+#current {
+    color: blue;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+#strength {
+    font-size: 0.8rem;
+    margin: -1rem 0 0 0.5rem;
+    width: 92%;
+}
+
+#show_password input {
+    width: 2rem;
+}
+
+#proceed {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#proceed button {
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    padding: 0.4rem;
+    border-radius: 0.2rem;
+    border: none;
+    width: 5rem;
+    text-align: center;
+}
+
+#createGmail>section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section img {
+    width: 18rem;
+}
+
+section p {
+    width: 95%;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: lighter;
+}
+
+h5 {
+    color: blue;
+    display: inline-block;
+    width: 40%;
+}
+
+article {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+span {
+    color: red;
+    font-size: 0.8rem;
+    padding: 0.3rem;
+    margin: -0.7rem 0 0.5rem 0;
+}
+
+
+#card header {
+    background: linear-gradient(to right, #654ea3, #eaafc8);
+    width: 100%;
+    height: 6rem;
+    position: absolute;
+    top: 0;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+#card {
+    margin: auto;
+    position: relative;
+    width: 18rem;
+    height: 29rem;
+    padding-bottom: 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+#card img {
+    width: 7rem;
+    z-index: 1;
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+
+#card ul {
+    list-style: none;
+}
+
+#card ul li {
+    margin: 0.5rem 0;
+}
+
+#card ion-icon {
+    margin: 0 0.5rem;
+}
+
+#card span ion-icon {
+    font-size: 1.7rem;
+    color: rgb(107, 107, 189);
+    padding: 0.4rem;
+    border-radius: 50%;
+    margin: 0;
+}
+
+#card button {
+    border-radius: 2rem;
+    background-color: rgb(129, 183, 201);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+}
+
+#card button:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 12px;
+    }
+
+    body {
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+
+
+    }
+
+
+    #createGmail {
+        width: 98%;
+        padding: 1rem;
+        height: 40rem;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    #email {
+        width: 98%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    #proceed {
+        width: 85%;
+    }
+
+    #createGmail>section {
+        display: none;
+    }
+    #card{
+        width: 25rem;
+        height: 38rem;
+        font-size: 2rem;
+    }
+}
